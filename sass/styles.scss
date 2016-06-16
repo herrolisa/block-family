@@ -66,3 +66,24 @@ h2{
     background-color: $light-color;
   }
 }
+
+@media (min-width: $large-screen) {
+  body{
+    background: $dark-color;
+  }
+  h1{
+    color: $bright-color;
+  }
+
+  h2{
+    color: $dark-color;
+  }
+
+  .block_family{
+    max-width: 800px;
+  }
+
+  .block_family li{
+    background-color: $bright-color;
+  }
+}
