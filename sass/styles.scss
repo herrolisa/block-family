@@ -1,14 +1,22 @@
 // Resets, Clearfix, etc
+@import 'partials/reset';
+@import 'partials/clearfix';
 
 // Variables
-$dark-color : #333333;
+$dark-color : #313C52;
+$light-color: #506BA0;
+$bright-color: #55B9F5;
+$padding-all: 25px;
+
 // Media Query Ranges
+$medium-screen: 600px;
+$large-screen: 900px;
 
 // Mixins
 
 // Styles
 body{
-  background: $dark-color;
+  background: $bright-color;
   text-align: center;
   color: #EEE;
 }
@@ -18,14 +26,16 @@ h1, h2, h3, h4{
 }
 
 h1{
-  padding: 20px;
-  color: #F1F1F1;
+  padding: $padding-all;
+  color: $dark-color;
+  font-size: 3.25em;
 }
 
 h2{
-
+  padding: 5px;
+  color: $light-color;
+  font-size: 2em;
 }
-
 
 .block_family{
   max-width:350px;
@@ -33,7 +43,7 @@ h2{
 }
 
 .block_family li{
-  background-color: #222;
+  background-color: $dark-color;
   margin-bottom: 20px;
   padding: 20px;
 }
