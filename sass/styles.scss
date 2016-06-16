@@ -74,6 +74,10 @@ h2{
     width: 48%;
     margin: 1%;
   }
+
+  .block_family li:nth-child(odd){
+    background-color: $dark-color;
+  }
 }
 
 @media (min-width: $large-screen) {
@@ -97,5 +101,13 @@ h2{
     background-color: $bright-color;
     width: 31.3%;
     margin: 1%;
+  }
+
+  .block_family li:nth-child(odd){
+    background-color: $bright-color;
+  }
+
+  .block_family li:nth-child(3n+2){
+    background-color: $light-color;
   }
 }
