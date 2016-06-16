@@ -13,6 +13,10 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Mixins
+@mixin block_font($block_font_size: 25px, $block_font_color: $dark-color){
+  font-size: $block_font_size;
+  color: $block_font_color;
+}
 
 // Styles
 body{
@@ -26,15 +30,13 @@ h1, h2, h3, h4{
 }
 
 h1{
+  @include block_font(3.25em, $dark-color);
   padding: $padding-all;
-  color: $dark-color;
-  font-size: 3.25em;
 }
 
 h2{
+  @include block_font(2em, $light-color);
   padding: 5px;
-  color: $light-color;
-  font-size: 2em;
 }
 
 .block_family{
